@@ -10,15 +10,14 @@
   scroll-behavior: smooth;
 }
 header {
-  min-height: 90vh;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
-}
 
+}
 body {
   background-color: #0d0d0d;
   color: #ffffff;
@@ -43,7 +42,8 @@ nav,
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+  font-size: 1.5rem;
 }
 
 .nav-links li a {
@@ -65,11 +65,7 @@ nav {
   height: 17vh;
 }
 
-.nav-links {
-  gap: 2rem;
-  list-style: none;
-  font-size: 1.5rem;
-}
+
 header {
   min-height: 90vh;
   display: flex;
@@ -108,8 +104,10 @@ h1 {
 }
 
 p {
-  color: #aaa;
+  color:whitesmoke;
   margin-bottom: 1rem;
+  font-size: 1.23rem;
+  
 }
 #socials-container {
   display: flex;
