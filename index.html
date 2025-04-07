@@ -1,285 +1,119 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo"><b>Portfolio</b></div>
-      <div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha Chattoraj | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><h1>PORTFOLIO</h1></div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-
-        </ul>
-      </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Sneha Chattoraj</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
 
-          
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/image-2.png" alt="Sneha profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Sneha Chattoraj</h1>
-       <!-- <p class="section__text__p2">Frontend Developer</p>-->
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/omnun1.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/sneha-chattoraj-3ba156258/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/snehaSC18'"
-          />
-          <img
-            src="./assets/image (1).png"
-            alt="My Instagram profile"
-            class="icon"
-            onclick="location.href='https://www.instagram.com/sneha_chattoraj/?hl=en'"
-          />
+    <header id="home">
+        <div class="container">
+            <div class="neon-circle">
+                <img src="./assets/image-2.png" alt="Sneha Profile" class="profile-img">
+            </div>
+            <h1 id="typewriter"></h1>
 
-          
+            <div class="btn-group">
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2"
+                  onclick="window.open('./assets/omnun1.pdf')"
+                >
+                  Download CV
+                </button>
+                <div id="socials-container">
+                  <img
+                    src="./assets/social.png"
+                    alt="My LinkedIn profile"
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/sneha-chattoraj-3ba156258/'"
+                  />
+                  <img
+                    src="./assets/icons8-github-logo-94.png"
+                    alt="My Github profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/snehaSC18'"
+                  />
+                  <img
+                    src="./assets/image (1).png"
+                    alt="My Instagram profile"
+                    class="icon"
+                    onclick="location.href='https://www.instagram.com/_sn.e.ha___c?igsh=N3NyYjBiejJpdzlh'"
+                  />
+        
+                  
+                </div>
+
+            </div>
         </div>
-      </div>
-    </section>
+    </header>
+
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/image-1.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-           <!-- <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>-->
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>10th boards CBSE (92%)<br /> 12th boards CBSE (89%) <br />B.Tech in Computer Science Engineering (current cgpa:8.68)</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hello! I'm Sneha Chattoraj,currently pursuing my btech from Asansol Engineering College.I have strong foundation in HTML, CSS, and JavaScript, and experience with frameworks like React.js. Currently, I'm exploring the exciting fields of machine learning and working in some exciting projects and also  backend technologies such as Node.js and databases like MongoDB,that will enable seamless collaboration on full-stack projects.Known for my problem-solving skills and unwavering focus, I never stop learning, ensuring I keep up with new technologies in the ever-evolving tech landscape.. Let's connect and create something amazing together!
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-content">
           <div class="details-container">
-           <!-- <h2 class="experience-sub-title">Frontend Development</h2>-->
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node.JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <!--<h2 class="experience-sub-title">Frontend Development</h2>-->
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Figma</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Machine Learning</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-      
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
+           
+            <h3>Education:</h3>
+            <h4>10th boards CBSE (92%)<br /> 12th boards CBSE (89%) <br />B.Tech in Computer Science Engineering (current cgpa:8.68)</h4>
           </div>
         </div>
-      </div>
-      <img
-        src="assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+        <br>
+        <br>
+            <p><h3>Hi! I'm Sneha, a passionate and dedicated Computer Science student with a strong foundation in web development, database management, and machine learning. Throughout my academic journey, I have consistently demonstrated analytical thinking, problem-solving ability, and a keen eye for debugging and scalability, which are essential for building efficient and robust applications.
+
+              I thrive in collaborative environments and enjoy working as part of a team to create innovative and impactful projects. My ability to adapt quickly to new technologies and my enthusiasm for learning have enabled me to stay up to date with industry trends and continuously enhance my skill set. I take pride in writing clean, efficient code, and am committed to following best practices in software development.
+              
+              Beyond technical skills, I bring strong communication, attention to detail, and a genuine passion for building solutions that solve real-world problems. I am especially interested in contributing to dynamic and fast-paced tech environments where creativity, problem-solving, and continuous improvement are encouraged.
+              
+              I am currently seeking opportunities to leverage my technical and interpersonal skills, gain practical experience, and contribute meaningfully to an organization's goals. With a growth mindset and a drive to make a difference, I am excited to take on challenges that allow me to learn, grow, and create value.</h3></p>
+        </div>
     </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">Python</div>
+            <div class="skill-card">React</div>
+            <div class="skill-card">Machine Learning</div>
+            <div class="skill-card">SQL</div>
+            <div class="skill-card">C</div>
+            <div class="skill-card">Figma</div>
+        </div>
+    </section>
+
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/medipredi.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Medi Predict</h2>
-            <div class="btn-container">
-              <button
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+
+
+            <div class="project-card">
+              <div class="article-container">
+                <img
+                  src="./assets/medipredi.jpg"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+                <h3>Machine Learning Predictor</h3>
+
+                <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/snehaSC18/MediPredict'"
               >
@@ -287,104 +121,72 @@
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/snehaSC18/MediPredict'"
+                onclick="location.href='https://medipredict-vyn7xarbslrgtngnrok5mq.streamlit.app'"
               >
                 Live Demo
               </button>
             </div>
+            <div class="project-card">
+              <div class="article-container">
+                <img
+                  src="./assets/neogadgets.jpeg"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h3>Neo-gadgets Online Store</h3>
+
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/snehaSC18/Neo-Gadgets.git'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://neo-gadgets.onrender.com/'"
+            >
+              Live Demo
+            </button>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/neogadgets.jpeg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Neo-Gadgets Online Store</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/snehaSC18/Neo-Gadgets.git'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://neo-gadgets.onrender.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div><!--
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>-->
-          </div>
+
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
+
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:snehachatt23@gmail.com">snehachatt23@gmail.com</a></p>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-info">
+
+
+            
+            <a href="mailto:snehachatt23@gmail.com"><img
+              src="./assets/gmail (1).png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            /></a><a href="https://www.linkedin.com/in/sneha-chattoraj-3ba156258/"><img
+              src="./assets/social.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            /></a>
+
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/sneha-chattoraj-3ba156258/">LinkedIn</a></p>
-        </div>
-      </div>
     </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Sneha Chattoraj. All Rights Reserved.</p>
+        <p>&copy; 2025 Sneha Chattoraj. All rights reserved.</p>
     </footer>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
