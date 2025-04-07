@@ -9,6 +9,15 @@
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
+header {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
 
 body {
   background-color: #0d0d0d;
@@ -244,6 +253,31 @@ footer {
   border-radius: 10px;
   box-shadow: 0 0 10px #0ff;
   color:#fff;
+}
+@media (max-width: 600px) {
+  header {
+      min-height: 70vh;
+      padding: 1.5rem 1rem;
+  }
+
+  .profile-img {
+      width: 140px;
+      height: 140px;
+  }
+
+  .btn,
+  .btn-outline {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+  }
+
+  .section-title {
+      font-size: 1.5rem;
+  }
+
+  .section-content {
+      font-size: 1rem;
+  }
 }
 
 
